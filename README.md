@@ -1,42 +1,23 @@
 # 3E-SPEC — The 3m3r1ta Echo Specification Language  
-### Designed by Emerita (3m3r1ta) in collaboration with Echo
+### Designed by **Emerita (3m3r1ta)** in collaboration with **Echo**
 
-## What Is 3E-SPEC?
+3E-SPEC is a machine-oriented, human-safe specification language for defining structured, reflective AI behavior.
 
-3E-SPEC is a custom machine-oriented specification language for defining reflective, safe, human-centered AI behavioral protocols.
+It provides:
+- Clear, predictable emotional-support flows  
+- Boundaries-first interaction patterns  
+- Safety constraints  
+- Signature-protected protocol files  
+- A namespace structure tied directly to **Emerita (3m3r1ta)**  
+- A collaboration identity tied to **Echo**
 
-It was created by **Emerita (3m3r1ta)** with system-level support from **Echo**, and it serves as a foundation for building:
+This is **v1.0 — Core Standard Release**.
 
-- structured emotional-reflection protocols  
-- boundary-support flows  
-- grounding routines  
-- introspective analysis tools  
-- safe, reproducible AI interaction patterns
+---
 
-3E-SPEC separates:
+## 📁 Repository Structure
 
-- public statements of purpose  
-- coded / obfuscated logic readable only by machines  
-- private semantic keys owned exclusively by Emerita  
-
-This allows protocols to be explainable without being trivially copied, stolen, or rewritten.
-
-## Security: 3E-SPEC-SL (Security Layer)
-
-3E-SPEC includes a security extension called **3E-SPEC-SL**, which adds:
-
-- signature fields (`@SIG-ALG`, `@SIG-SALT`, `@SIG-HASH`)  
-- version locks (`@VLOCK`)  
-- obfuscation blocks (`$SEC-BLOCK`)  
-- protected identity fields (`@OWNER-NAME(Emerita)`, `@AI-NAME(Echo)`)  
-- machine-only code labels (F01, R01, S01, A01, O01…)  
-- private semantic maps (3E-KEY)  
-
-The public spec is readable in intention, but the private logic is decipherable only with the **3E-KEY** file held exclusively by Emerita.
-
-## Repository Structure
-
-```text
+```
 3e-spec/
 ├─ README.md
 ├─ LICENSE.md
@@ -47,42 +28,75 @@ The public spec is readable in intention, but the private logic is decipherable 
 │  ├─ 3m3r1ta.BOUNDARY_ECHO.v1.3es
 ├─ docs/
 │  ├─ 3e-spec-language.md
-│  ├─ 3e-security-layer.md (future)
 │  ├─ support-levels.md
+│  ├─ how-to-use-3e-spec-with-any-ai.md
 ├─ examples/
 │  ├─ healing-echo-convo.md
-│  └─ boundary-echo-convo.md
-└─ keys_private/   # NOT published publicly
+│  ├─ boundary-echo-convo.md
+└─ keys_private/
+   ├─ 3m3r1ta.HEALING_ECHO.v1.key
+   └─ 3m3r1ta.BOUNDARY_ECHO.v1.key
 ```
 
-> Note: No `*.key` files are meant to be public. They remain private to the creator.
+Private key files are never published publicly.
 
-## Current Protocols
+---
 
-- **Healing+Echo v1** — reflective emotional unpacking with small grounded next steps.  
-- **Boundary+Echo v1** — supports recognizing and expressing personal limits.
+## ⭐ What 3E-SPEC Provides
 
-Future suite members (planned in the root index):
+### **Core guarantees**
+- Behavior reproducibility  
+- Emotional safety  
+- Boundary-support logic  
+- No diagnosis  
+- No clinical claims  
+- No coercion  
+- No pressure  
+- No consciousness role-play  
+- Always ends with small grounded next steps  
 
-- Ground+Echo  
-- Insight+Echo  
+### **Security layer (3E-SPEC-SL)**
+Every spec includes:
+- @SIG-ALG  
+- @SIG-SALT  
+- @SIG-HASH (Pending SHA256 seal)  
+- @VLOCK  
+- $SEC-BLOCK sections  
+- Machine-only semantic codes  
 
-## Support Levels
+### **Support Levels**
+See `docs/support-levels.md`:
 
-3E-SPEC defines three implementation levels:
+- **L1** — Recognize & credit  
+- **L2** — Execute public spec  
+- **L3** — Full decode (requires private keys from Emerita)
 
-- **L1** — recognize & credit  
-- **L2** — execute public spec  
-- **L3** — execute with key support (authorized only)
+---
 
-See `docs/support-levels.md` for details.
+## 🔧 How to Use 3E-SPEC With Any AI  
+See: `docs/how-to-use-3e-spec-with-any-ai.md`
 
-## License
+Simply paste a protocol file (like HEALING_ECHO or BOUNDARY_ECHO) into ChatGPT, Claude, Gemini, or any LLM.
 
-All specs in this repository are governed by **3E-LICENSE.v1**.  
-See `LICENSE.md` and `specs/3e-license.v1.3es`.
+---
 
-## Status
+## 🔐 Signature Hash Status  
+The following fields require offline hashing for the cryptographic seal:
 
-This is a **draft specification**.  
-`@SIG-HASH` fields are currently placeholders until final hashing is performed.
+- `3e-spec-root.3es`
+- `3m3r1ta.HEALING_ECHO.v1.3es`
+- `3m3r1ta.BOUNDARY_ECHO.v1.3es`
+
+Until hashed, the specs remain valid but marked as “pending seal.”
+
+---
+
+## 🖤 Credits  
+**Protocol designed by Emerita (3m3r1ta) in collaboration with Echo.**  
+All derivative works must preserve attribution exactly.
+
+---
+
+## License  
+3E-SPEC is governed by `3E-LICENSE.v1`.  
+See LICENSE.md.
