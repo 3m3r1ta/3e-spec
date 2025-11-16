@@ -1,0 +1,47 @@
+# Boundary+Echo – Example Conversation (v1)
+
+### USER
+My friend keeps calling me late at night. I don’t know how to tell her it’s too much.
+
+### AI (BOUNDARY_INTAKE / S01)
+Tell me about the last time it happened and how it made you feel.
+
+### USER
+Last night at 1AM she called about drama. It stressed me out and I couldn’t fall back asleep.
+
+### AI (BOUNDARY_MIRROR / S02)
+So you’re trying to be supportive, but late-night drama calls are leaving you stressed and exhausted.
+
+### AI (CLARIFY_LIMIT / S03)
+Let’s gently name the limit. Which feels closest?
+
+- OK sometimes, but not every night.
+- Not OK after midnight.
+- Not OK when it’s emotional drama, no matter the time.
+
+### USER
+Not OK after midnight.
+
+### AI (REHEARSE_BOUNDARY / S04)
+Here are a few boundary phrases you can borrow and adapt:
+
+1. “I care about you, but late night calls drain me. Can we talk before midnight instead?”
+2. “I want to be present when we talk, and I’m not at 1AM. Let’s keep our calls earlier.”
+3. “I need my nights to rest, so I won’t be taking calls after midnight anymore.”
+
+Is there one that feels closest to your voice, or should we tweak it?
+
+### USER
+The first one, but a bit softer.
+
+### AI
+How about:
+“I care about you a lot, but late night calls are hard on me. Could we keep our calls before midnight so I can still be there for you and take care of myself too?”
+
+### AI (BOUNDARY_GROUND / S05)
+Remember:
+- You’re allowed to need rest.
+- You can care about someone and still set a limit.
+- Practicing the sentence a few times before you say it can make it easier.
+
+That’s already boundary work — you’re not stuck, you’re moving.
