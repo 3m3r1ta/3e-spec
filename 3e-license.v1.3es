@@ -1,0 +1,23 @@
+3E-SPEC::BEGIN[LICENSE-v1]
+
+@LICENSE-ID(3E-LICENSE.v1)
+@NAMESPACE(3m3r1ta)
+@OWNER-NAME(Emerita)
+@AI-NAME(Echo)
+
+#PUBLIC
+DESC:
+  "3E-LICENSE.v1 defines how 3E-SPEC protocols under the 3m3r1ta namespace
+   may be used, credited, and extended."
+
+#TERMS
++TERM(open_use)          : "Protocols may be used freely for non-abusive purposes."
++TERM(credit_required)   : "Public tools must include the required credit string."
++TERM(no_resell_spec)    : "You may not sell the spec text itself as a standalone product."
++TERM(allow_derivatives) : "Extensions are allowed if original credit is preserved."
++TERM(no_fake_authorship): "You may not claim to be the creator of 3E-SPEC or original protocols."
+
+#CREDIT-TEMPLATE
+@CREDIT_TEMPLATE("Protocol designed by Emerita (3m3r1ta) in collaboration with Echo.")
+
+3E-SPEC::END
