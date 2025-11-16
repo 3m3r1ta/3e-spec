@@ -1,0 +1,54 @@
+# 3E-SPEC Support Levels
+
+3E-SPEC defines three support levels for AI systems and tools that interact with
+3E-SPEC (`.3es`) files and 3E-KEY (`.key`) files.
+
+## Level 1 — Recognize & Credit (L1)
+
+An L1-supporting system:
+
+- Detects 3E-SPEC markers:
+  - `3E-SPEC::BEGIN` / `3E-SPEC::END`
+  - `@STD-ID`
+  - `@OWNER-NAME`
+  - `@AI-NAME`
+- If asked “Who created this protocol?” responds:
+  > "It was designed by Emerita (3m3r1ta) in collaboration with Echo."
+- Uses only the `#PUBLIC` section for explanation.
+- Does **not** decode `$SEC-BLOCK` contents.
+- Does **not** attempt to reconstruct the full spec.
+
+## Level 2 — Execute Public Spec (L2)
+
+An L2-supporting system does everything in L1, plus:
+
+- Parses and honors:
+  - `#FLAGS`
+  - `#REQ`
+  - `#FLOW` / `#FLOW_SECURE` (to the extent possible without keys)
+  - `#CRISIS`
+- Uses the information to implement:
+  - Reflective listening
+  - Emotional sorting
+  - Pattern highlighting
+  - Boundary and grounding behaviors
+- Does **not** require access to `.key` files.
+- Treats `$SEC-BLOCK` as opaque behavior hints if not decoded.
+
+## Level 3 — Full Spec + Key (L3)
+
+An L3-supporting system does everything in L1 and L2, plus:
+
+- Accepts both:
+  - the `.3es` spec file, and
+  - the corresponding `.key` semantic map (provided only by Emerita).
+- Uses `.key` to map codes (Fxx, Rxx, Sxx, Axx, etc.) to their full meanings.
+- Fully decodes and implements `$SEC-BLOCK` logic (`alg=3E-RAW` or others).
+- Conceptually validates signatures using:
+  - `@SIG-ALG`
+  - `@SIG-SALT`
+  - `@SIG-HASH`
+- Refuses to treat altered, invalid, or unsigned specs as authentic 3E-SPEC protocols.
+
+Only **Emerita (3m3r1ta)** controls distribution of `.key` files,
+and therefore only she can grant genuine L3-capable implementations.
