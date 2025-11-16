@@ -1,0 +1,89 @@
+# 3E-SPEC Language Guide (v1)
+
+## 1. Introduction
+3E-SPEC is the machine-readable language used to define AI behavioral protocols under the 3m3r1ta namespace. It supports:
+- public-readable descriptions
+- coded logic blocks
+- a security layer (3E-SPEC-SL)
+- signature validation
+- namespace + version management
+- key-based private semantics
+
+## 2. Reserved Directives
+
+### Identity
+- `@NAMESPACE()`
+- `@OWNER()`
+- `@OWNER-ID()`
+- `@OWNER-NAME()`
+- `@AI-NAME()`
+- `@STD-ID()`
+- `@MODE()`
+- `@TRIGGER()`
+
+### Security
+- `@SEAL()` / `@SEAL-ROOT()`
+- `@SIG-ALG()`
+- `@SIG-SALT()`
+- `@SIG-HASH()`
+- `@VLOCK()`
+
+### License
+- `@LICENSE-ID()`
+- `@LICENSE-URL()`
+- `@CREDIT()`
+- `@CREDIT_REQUIRED`
+
+## 3. Sections
+
+- `#PUBLIC` — Human-readable intention and description.  
+- `#FLAGS` — Boolean constraints (coded or readable).  
+- `#REQ` — Required assistant behaviors.  
+- `#FLOW` / `#FLOW_SECURE` — State machine logic.  
+- `#CRISIS` — Crisis detection terms + actions.  
+- `#SUITE-INDEX` — Root-level list of all protocols in namespace.  
+- `DESC:` — Description lines inside `#PUBLIC`.
+
+## 4. Security Blocks
+
+Syntax:
+
+```text
+$SEC-BLOCK[id=<id>,alg=<algorithm>]<<<
+   ...encoded data...
+>>>$END
+```
+
+Supported algorithms (initial set):
+- `3E-RAW` — raw encoded state machine data
+- `3E-B64` — Base64 obfuscation
+
+## 5. Key Mapping (3E-KEY)
+
+Every code in public specs (F01, R01, S02, A03, etc.) maps to a meaning stored in `*.key` files (private). Tools with Level 3 support can read these mappings to fully resolve behavior semantics.
+
+## 6. Signatures
+
+Validation (conceptual):
+
+1. Remove the `@SIG-HASH(...)` line from the file.
+2. Normalize whitespace and line endings.
+3. Append the salt from `@SIG-SALT(...)` to the normalized text.
+4. Compute the SHA256 hash of the resulting string.
+5. Compare the hex digest to `@SIG-HASH(...)`.
+
+If they differ, the spec is considered altered or invalid.
+
+## 7. Support Levels
+
+- **L1 — Recognize & Credit**  
+- **L2 — Execute Public Spec**  
+- **L3 — Full Spec + Key Support**  
+
+See `docs/support-levels.md` for full definitions.
+
+## 8. File Extensions
+
+- `.3es` — 3E-SPEC public file  
+- `.key` — 3E-KEY private semantic map  
+- `.md` — documentation  
